@@ -1,0 +1,23 @@
+Command: run_experiment.py 
+Arguments:
+  data_train: /scratch/aerofeev/transformer/data/train/data_done_train
+  data_test: /scratch/aerofeev/transformer/data/test/data_done_test
+  voc_size: [2201, 1101, 1101, 2721, 561, 561, 561, 561]
+  sequence: 100
+  batch: 100
+  emb_dim: 256
+  ff_hidden_layer: 8192
+  dropout: 0.1
+  num_heads: 16
+  num_layers: 7
+  lr: 0.0005
+  warmup: 0.05
+  wd: 0.01
+  corr_weight_decay: True
+  norm_clip: 1.0
+  epochs: 10
+  max_train_batches_per_epoch: inf
+  max_test_batches_per_epoch: inf
+  train_batches_per_epoch: 2114
+  test_batches_per_epoch: 18
+  total_parameters: 374101144
